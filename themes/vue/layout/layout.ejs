@@ -57,7 +57,7 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono&display=swap" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Dosis:500&text=Vue.js&display=swap" rel="stylesheet"> -->
 
-    <link href="//code.bdstatic.com/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="//code.bdstatic.com/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
     <!-- main page styles -->
     <%- css(isIndex ? 'css/index' : 'css/page') %>
@@ -67,7 +67,7 @@
 
     <% if (isThemes) { %>
     <script src="<%- url_for('/js/theme-data.js') %>"></script>
-    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js" integrity="sha256-LSUpTY0kkXGKvcBC9kbmgibmx3NVVgJvAEfTZbs51mU=" crossorigin="anonymous"></script>
+    <script src="/npm/showdown@1.9.0/dist/showdown.min.js" integrity="sha256-LSUpTY0kkXGKvcBC9kbmgibmx3NVVgJvAEfTZbs51mU=" crossorigin="anonymous"></script>
     <% } %>
 
     <script>
@@ -76,7 +76,7 @@
     </script>
 
     <!-- Fathom - beautiful, simple website analytics -->
-    <script src="https://cdn.usefathom.com/script.js" data-site="KTDIHEIJ" defer></script>
+    <!-- <script src="https://cdn.usefathom.com/script.js" data-site="KTDIHEIJ" defer></script> -->
     <!-- / Fathom -->
 
     <!-- vimeo analytics -->
@@ -106,35 +106,6 @@
     <script src="<%- url_for("/js/css.escape.js") %>"></script>
     <script src="<%- url_for("/js/common.js") %>"></script>
 
-    <!-- search -->
-    <link href="//code.bdstatic.com/npm/docsearch.js@1.5.0/dist/cdn/docsearch.min.css" rel='stylesheet' type='text/css'>
-    <%- css('css/search') %>
-    <script src="//code.bdstatic.com/npm/docsearch.js@1.5.0/dist/cdn/docsearch.min.js"></script>
-    <script>
-    [
-      '#search-query-nav',
-      '#search-query-sidebar',
-      '#search-query-menu'
-    ].forEach(function (selector) {
-      if (!document.querySelector(selector)) return
-      docsearch({
-        appId: 'UURH1MHAF7',
-        apiKey: 'c23eb8e7895f42daeaf2bf6f63eb4bf6',
-        indexName: 'vuejs_cn2',
-        inputSelector: selector,
-        algoliaOptions: { facetFilters: ["version:v2"]},
-        autocompleteOptions: { hint: false, appendTo: 'body'}
-      })
-    })
-
-    // unregister service worker
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(function(registrations) {
-        for(let registration of registrations) {
-          registration.unregister()
-        }
-      })
-    }
-    </script>
+ 
   </body>
 </html>

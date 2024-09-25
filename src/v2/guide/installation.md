@@ -2,8 +2,8 @@
 title: 安装
 type: guide
 order: 1
-vue_version: 2.7.14
-gz_size: "37.51"
+vue_version: 2.7.16
+gz_size: "37.72"
 ---
 
 ### 兼容性
@@ -26,37 +26,37 @@ Vue 在其所有项目中公布的功能和行为都遵循[语义化版本控制
 
 ## 直接用 `<script>` 引入
 
-<div class="vueschool" style=""><a href="https://learning.dcloud.io/#/?vid=1" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 安装与部署">观看本节视频讲解</a></div>
+<!-- <div class="vueschool" style=""><a href="https://learning.dcloud.io/#/?vid=1" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 安装与部署">观看本节视频讲解</a></div> -->
 
 直接下载并用 `<script>` 标签引入，`Vue` 会被注册为一个全局变量。
 
 <p class="tip">在开发环境下不要使用压缩版本，不然你就失去了所有常见错误相关的警告!</p>
 
-<div id="downloads">
+<!-- <div id="downloads">
   <a class="button" href="https://v2.cn.vuejs.org/js/vue.js" download>开发版本</a><span class="light info">包含完整的警告和调试模式</span>
 
   <a class="button" href="https://v2.cn.vuejs.org/js/vue.min.js" download>生产版本</a><span class="light info">删除了警告，{{gz_size}}KB min+gzip</span>
-</div>
+</div> -->
 
 ### CDN
 
 对于制作原型或学习，你可以这样使用最新版本：
 
 ``` html
-<script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
 ```
 
 对于生产环境，我们推荐链接到一个明确的版本号和构建文件，以避免新版本造成的不可预期的破坏：
 
 ``` html
-<script src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.16"></script>
 ```
 
 如果你使用原生 ES Modules，这里也有一个兼容 ES Module 的构建文件：
 
 ``` html
 <script type="module">
-  import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.esm.browser.js'
+  import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.esm.browser.js'
 </script>
 ```
 
@@ -81,11 +81,11 @@ Vue 提供了一个[官方的 CLI](https://github.com/vuejs/vue-cli)，为单页
 
 <p class="tip">CLI 工具假定用户对 Node.js 和相关构建工具有一定程度的了解。如果你是新手，我们强烈建议先在不用构建工具的情况下通读<a href="./">指南</a>，在熟悉 Vue 本身之后再使用 CLI。</p>
 
-<div class="vue-mastery"><a href="https://www.vuemastery.com/courses/real-world-vue-js/vue-cli" target="_blank" rel="sponsored noopener" title="Vue CLI">在 Vue Mastery 观看视频讲解</a></div>
+<!-- <div class="vue-mastery"><a href="https://www.vuemastery.com/courses/real-world-vue-js/vue-cli" target="_blank" rel="sponsored noopener" title="Vue CLI">在 Vue Mastery 观看视频讲解</a></div> -->
 
 ## 对不同构建版本的解释
 
-在 [NPM 包的 `dist/` 目录](https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/)你将会找到很多不同的 Vue.js 构建版本。这里列出了它们之间的差别：
+在 [NPM 包的 `dist/` 目录](https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/)你将会找到很多不同的 Vue.js 构建版本。这里列出了它们之间的差别：
 
 | | UMD | CommonJS | ES Module (基于构建工具使用) | ES Module (直接用于浏览器) |
 | --- | --- | --- | --- | --- |
@@ -102,7 +102,7 @@ Vue 提供了一个[官方的 CLI](https://github.com/vuejs/vue-cli)，为单页
 
 - **运行时**：用来创建 Vue 实例、渲染并处理虚拟 DOM 等的代码。基本上就是除去编译器的其它一切。
 
-- **[UMD](https://github.com/umdjs/umd)**：UMD 版本可以通过 `<script>` 标签直接用在浏览器中。jsDelivr CDN 的 [https://cdn.jsdelivr.net/npm/vue@2.7.14](https://cdn.jsdelivr.net/npm/vue@2.7.14) 默认文件就是运行时 + 编译器的 UMD 版本 (`vue.js`)。
+- **[UMD](https://github.com/umdjs/umd)**：UMD 版本可以通过 `<script>` 标签直接用在浏览器中。jsDelivr CDN 的 [https://cdn.jsdelivr.net/npm/vue@2.7.16](/npm/vue@2.7.16) 默认文件就是运行时 + 编译器的 UMD 版本 (`vue.js`)。
 
 - **[CommonJS](http://wiki.commonjs.org/wiki/Modules/1.1)**：CommonJS 版本用来配合老的打包工具比如 [Browserify](http://browserify.org/) 或 [webpack 1](https://webpack.github.io)。这些打包工具的默认文件 (`pkg.main`) 是只包含运行时的 CommonJS 版本 (`vue.runtime.common.js`)。
 

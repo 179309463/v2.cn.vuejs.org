@@ -2706,13 +2706,13 @@ type: api
 
 - **参考**：[通过插槽分发内容](../guide/components.html#通过插槽分发内容)
 
-## VNode 接口
+<!-- ## VNode 接口
 
 - 请参考 [VNode class declaration](https://github.com/vuejs/vue/blob/dev/src/core/vdom/vnode.js)。
 
 ## 服务端渲染
 
-- 请参考 [vue-server-renderer package documentation](https://github.com/vuejs/vue/tree/dev/packages/vue-server-renderer)。
+- 请参考 [vue-server-renderer package documentation](https://github.com/vuejs/vue/tree/dev/packages/vue-server-renderer)。 -->
 
 <!-- zhlint ignore: { `enter`: number, `leave`: number } -->
 <!-- zhlint ignore: ( , ) -->

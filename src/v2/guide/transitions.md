@@ -301,7 +301,7 @@ new Vue({
 示例：
 
 ``` html
-<link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+<link href="/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
 
 <div id="example-3">
   <button @click="show = !show">
@@ -327,7 +327,7 @@ new Vue({
 ```
 
 {% raw %}
-<link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+<link href="/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
 <div id="example-3" class="demo">
   <button @click="show = !show">
     Toggle render
@@ -452,7 +452,7 @@ methods: {
 <!--
 Velocity 和 jQuery.animate 的工作方式类似，也是用来实现 JavaScript 动画的一个很棒的选择
 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+<script src="/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 
 <div id="example-4">
   <button @click="show = !show">
@@ -515,7 +515,7 @@ new Vue({
     </p>
   </transition>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+<script src="/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 <script>
 new Vue({
   el: '#example-4',
@@ -1069,7 +1069,7 @@ new Vue({
 `v-move` 对于设置过渡的切换时机和过渡曲线非常有用，你会看到如下的例子：
 
 ``` html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+<script src="/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
 
 <div id="flip-list-demo" class="demo">
   <button v-on:click="shuffle">Shuffle</button>
@@ -1102,7 +1102,7 @@ new Vue({
 ```
 
 {% raw %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+<script src="/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
 <div id="flip-list-demo" class="demo">
   <button v-on:click="shuffle">Shuffle</button>
   <transition-group name="flip-list" tag="ul">
@@ -1136,7 +1136,7 @@ new Vue({
 
 我们将之前实现的例子和这个技术结合，使我们列表的一切变动都会有动画过渡。
 ``` html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+<script src="/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
 
 <div id="list-complete-demo" class="demo">
   <button v-on:click="shuffle">Shuffle</button>
@@ -1195,7 +1195,7 @@ new Vue({
 ```
 
 {% raw %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+<script src="/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
 <div id="list-complete-demo" class="demo">
   <button v-on:click="shuffle">Shuffle</button>
   <button v-on:click="add">Add</button>
@@ -1247,7 +1247,8 @@ new Vue({
 
 <p class="tip">需要注意的是使用 FLIP 过渡的元素不能设置为 `display: inline` 。作为替代方案，可以设置为 `display: inline-block` 或者放置于 flex 中</p>
 
-FLIP 动画不仅可以实现单列过渡，多维网格也[同样可以过渡](https://codesandbox.io/s/github/vuejs/v2.vuejs.org/tree/master/src/v2/examples/vue-20-list-move-transitions)：
+FLIP 动画不仅可以实现单列过渡，多维网格也同样可以过渡
+<!-- [同样可以过渡](https://codesandbox.io/s/github/vuejs/v2.vuejs.org/tree/master/src/v2/examples/vue-20-list-move-transitions)： -->
 
 {% raw %}
 <div id="sudoku-demo" class="demo">
@@ -1315,7 +1316,7 @@ new Vue({
 通过 data attribute 与 JavaScript 通信，就可以实现列表的交错过渡：
 
 ``` html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+<script src="/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 
 <div id="staggered-list-demo">
   <input v-model="query">
@@ -1387,7 +1388,7 @@ new Vue({
 ```
 
 {% raw %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+<script src="/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 <div id="example-5" class="demo">
   <input v-model="query">
   <transition-group
@@ -1524,7 +1525,7 @@ Vue.component('my-special-transition', {
 所有过渡 attribute 都可以动态绑定，但我们不仅仅只有 attribute 可以利用，还可以通过事件钩子获取上下文中的所有数据，因为事件钩子都是方法。这意味着，根据组件的状态不同，你的 JavaScript 过渡会有不同的表现。
 
 ``` html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+<script src="/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 
 <div id="dynamic-fade-demo" class="demo">
   Fade In: <input type="range" v-model="fadeInDuration" min="0" v-bind:max="maxFadeDuration">
@@ -1596,7 +1597,7 @@ new Vue({
 ```
 
 {% raw %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+<script src="/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 <div id="dynamic-fade-demo" class="demo">
   Fade In: <input type="range" v-model="fadeInDuration" min="0" v-bind:max="maxFadeDuration">
   Fade Out: <input type="range" v-model="fadeOutDuration" min="0" v-bind:max="maxFadeDuration">

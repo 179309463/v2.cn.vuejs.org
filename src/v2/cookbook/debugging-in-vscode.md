@@ -125,6 +125,6 @@ export default {
 </script>
 ```
 
-## 致谢
+<!-- ## 致谢
 
-这个案例是基于 [Kenneth Auchenberg](https://twitter.com/auchenberg) 贡献在[这里](https://github.com/Microsoft/VSCode-recipes/tree/master/vuejs-cli)的文章而撰写的。
+这个案例是基于 [Kenneth Auchenberg](https://twitter.com/auchenberg) 贡献在[这里](https://github.com/Microsoft/VSCode-recipes/tree/master/vuejs-cli)的文章而撰写的。 -->

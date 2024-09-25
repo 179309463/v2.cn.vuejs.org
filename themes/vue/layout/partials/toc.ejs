@@ -27,11 +27,12 @@
         <li><h3>迁移</h3></li>
       <% } %>
       <% if (fileName === 'comparison') { %>
-        <li><h3>更多</h3></li>
       <% } %>
     <% } %>
+    <% if (fileName != 'comparison' && (fileName != 'join') && (fileName!='team')) { %>
     <li>
       <a href="<%- url_for(p.path) %>" class="sidebar-link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><%- p.title %></a>
     </li>
+    <% } %>
   <% }) %>
 </ul>

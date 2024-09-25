@@ -18,11 +18,11 @@ order: 5
 npm install buttercms --save
 ```
 
-Butter 也可以通过 CDN 加载：
+<!-- Butter 也可以通过 CDN 加载：
 
 ```html
 <script src="https://cdnjs.buttercms.com/buttercms-1.1.0.min.js"></script>
-```
+``` -->
 
 ## 快速开始
 
@@ -39,7 +39,7 @@ import Butter from 'buttercms';
 const butter = Butter('your_api_token');
 ```
 
-使用 CDN：
+<!-- 使用 CDN：
 
 ```html
 <script src="https://cdnjs.buttercms.com/buttercms-1.1.0.min.js"></script>
@@ -54,7 +54,7 @@ const butter = Butter('your_api_token');
 butter.post.list({page: 1, page_size: 10}).then(function(response) {
   console.log(response)
 })
-```
+``` -->
 
 这个 API 请求会获取你的博客文章列表。你将会在请求的响应中看到你的账户的一篇示例博文。
 

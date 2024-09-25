@@ -107,7 +107,7 @@ const app = new Vue({
 非常短小精悍。我们定义了一个数组来放置错误，并将这三个表单字段的默认值设为 `null`。`checkForm` 的逻辑 (在表单提交时运行) 只会检查姓名和年龄，因为电影是选填的。如果它们是空的，那么我们会检查每一个字段并设置相应的错误，差不多就是这样。你可以在下面运行这个 demo。不要忘记提交成功时它会 POST 到一个临时的 URL。
 
 <p data-height="265" data-theme-id="0" data-slug-hash="GObpZM" data-default-tab="html,result" data-user="cfjedimaster" data-embed-version="2" data-pen-title="form validation 1" class="codepen">在 <a href="https://codepen.io">CodePen</a> 查看 Raymond Camden (<a href="https://codepen.io/cfjedimaster">@cfjedimaster</a>) 的 <a href="https://codepen.io/cfjedimaster/pen/GObpZM/">表单校验 1</a>。</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<script async src="/ajax/libs/embed/ei.js"></script>
 
 ## 使用自定义校验
 
@@ -213,7 +213,7 @@ const app = new Vue({
 如你所见，我们添加了一个新方法 `validEmail`，它将会在 `checkForm` 中被调用了。我们现在可以这样运行示例：
 
 <p data-height="265" data-theme-id="0" data-slug-hash="vWqNXZ" data-default-tab="html,result" data-user="cfjedimaster" data-embed-version="2" data-pen-title="form validation 2" class="codepen">在 <a href="https://codepen.io">CodePen</a> 查看 Raymond Camden (<a href="https://codepen.io/cfjedimaster">@cfjedimaster</a>) 的 <a href="https://codepen.io/cfjedimaster/pen/vWqNXZ/">表单校验 2</a>。</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<script async src="/ajax/libs/embed/ei.js"></script>
 
 ## 另一个自定义校验的例子
 
@@ -326,7 +326,7 @@ const app = new Vue({
 我们将总和设置为了一个计算属性，从那个我们解决掉的 bug 外面看上去，这已经足够了。我的 `checkForm` 方法现在只需要关注总和是不是 100 了。你可以在这里试用：
 
 <p data-height="265" data-theme-id="0" data-slug-hash="vWqGoy" data-default-tab="html,result" data-user="cfjedimaster" data-embed-version="2" data-pen-title="form validation 3" class="codepen">在 <a href="https://codepen.io">CodePen</a> 查看 Raymond Camden (<a href="https://codepen.io/cfjedimaster">@cfjedimaster</a>) 的 <a href="https://codepen.io/cfjedimaster/pen/vWqGoy/">表单校验3</a>。</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<script async src="/ajax/libs/embed/ei.js"></script>
 
 ## 服务端校验
 
@@ -426,7 +426,7 @@ const app = new Vue({
 我们从一个运行在 OpenWhisk 的 API 的 URL 变量开始。现在注意 `checkForm`。在这个版本中，我们始终阻止了表单的提交 (当然，它也可以通过 Vue 在 HTML 中完成)。你可以看到一个基本的校验，即 `this.name` 是否为空，然后我们请求这个 API。如果名字是无效的，我们就添加一个错误。如果是有效的，我们就不做任何事 (只是一个 alert)，但是你可以引导用户去一个新页面，在 URL 中带上产品的名字，或者其它行为。接下来你可以体验这个 demo：
 
 <p data-height="265" data-theme-id="0" data-slug-hash="BmgzeM" data-default-tab="js,result" data-user="cfjedimaster" data-embed-version="2" data-pen-title="form validation 4" class="codepen">在 <a href="https://codepen.io">CodePen</a> 查看 Raymond Camden (<a href="https://codepen.io/cfjedimaster">@cfjedimaster</a>) 的 <a href="https://codepen.io/cfjedimaster/pen/BmgzeM/">表单校验4。</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<script async src="/ajax/libs/embed/ei.js"></script>
 
 ## 其它替代模式
 

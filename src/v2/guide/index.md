@@ -6,7 +6,7 @@ order: 2
 
 ## Vue.js 是什么
 
-<div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=0" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - Vue.js 介绍">观看本节视频讲解</a></div>
+<!-- <div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=0" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - Vue.js 介绍">观看本节视频讲解</a></div> -->
 
 Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**渐进式框架**。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与[现代化的工具链](single-file-components.html)以及各种[支持类库](https://github.com/vuejs/awesome-vue#libraries--plugins)结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。
 
@@ -17,13 +17,14 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
 
 ## 起步
 
-<div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=1" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 安装与部署">观看本节视频讲解</a></div>
+<!-- <div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=1" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 安装与部署">观看本节视频讲解</a></div> -->
 
 <p class="tip">官方指南假设你已了解关于 HTML、CSS 和 JavaScript 的中级知识。如果你刚开始学习前端开发，将框架作为你的第一步可能不是最好的主意——掌握好基础知识再来吧！之前有其它框架的使用经验会有帮助，但这不是必需的。</p>
 
 <a class="button" href="installation.html">安装</a>
 
-尝试 Vue.js 最简单的方法是使用 [Hello World 例子](https://codesandbox.io/s/github/vuejs/v2.vuejs.org/tree/master/src/v2/examples/vue-20-hello-world)。你可以在浏览器新标签页中打开它，跟着例子学习一些基础用法。或者你也可以<a href="https://github.com/vuejs/v2.vuejs.org/blob/master/src/v2/examples/vue-20-hello-world/index.html" target="_blank" download="index.html" rel="noopener noreferrer">创建一个 <code>.html</code> 文件</a>，然后通过如下方式引入 Vue：
+<!-- 尝试 Vue.js 最简单的方法是使用 [Hello World 例子](https://codesandbox.io/s/github/vuejs/v2.vuejs.org/tree/master/src/v2/examples/vue-20-hello-world)。你可以在浏览器新标签页中打开它，跟着例子学习一些基础用法。或者你也可以<a href="https://github.com/vuejs/v2.vuejs.org/blob/master/src/v2/examples/vue-20-hello-world/index.html" target="_blank" download="index.html" rel="noopener noreferrer">创建一个 <code>.html</code> 文件</a>，然后 -->
+通过如下方式引入 Vue：
 
 ``` html
 <!-- 开发环境版本，包含了有帮助的命令行警告 -->
@@ -43,7 +44,7 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
 
 ## 声明式渲染
 
-<div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=3" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 数据与方法">观看本节视频讲解</a></div>
+<!-- <div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=3" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 数据与方法">观看本节视频讲解</a></div> -->
 
 Vue.js 的核心是一个允许采用简洁的模板语法来声明式地将数据渲染进 DOM 的系统：
 
@@ -117,7 +118,7 @@ var app2 = new Vue({
 
 ## 条件与循环
 
-<div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=8" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 条件渲染">观看本节视频讲解</a></div>
+<!-- <div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=8" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 条件渲染">观看本节视频讲解</a></div> -->
 
 控制切换一个元素是否显示也相当简单：
 
@@ -201,7 +202,7 @@ var app4 = new Vue({
 
 ## 处理用户输入
 
-<div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=11" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 表单输入绑定">观看本节视频讲解</a></div>
+<!-- <div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=11" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 表单输入绑定">观看本节视频讲解</a></div> -->
 
 为了让用户和你的应用进行交互，我们可以用 `v-on` 指令添加一个事件监听器，通过它调用在 Vue 实例中定义的方法：
 
@@ -279,7 +280,7 @@ var app6 = new Vue({
 
 ## 组件化应用构建
 
-<div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=12" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 组件基础">观看本节视频讲解</a></div>
+<!-- <div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=12" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 组件基础">观看本节视频讲解</a></div> -->
 
 组件系统是 Vue 的另一个重要概念，因为它是一种抽象，允许我们使用小型、独立和通常可复用的组件构建大型应用。仔细想想，几乎任意类型的应用界面都可以抽象为一个组件树：
 

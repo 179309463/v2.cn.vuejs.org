@@ -92,11 +92,11 @@ Vue Testing Library 是一组专注于测试组件而不依赖实现细节的工
 
 Vue Test Utils 是官方的偏底层的组件测试库，它是为用户提供对 Vue 特定 API 的访问而编写的。如果你对测试 Vue 应用不熟悉，我们建议你使用 Vue Testing Library，它是 Vue Test Utils 的抽象。
 
-**资源：**
+<!-- **资源：**
 
 - [Vue Test Utils 官方文档](https://vue-test-utils.vuejs.org)
 - [Vue 测试指南](https://lmiller1990.github.io/vue-testing-handbook/zh-CN/) by Lachlan Miller
-- [Cookbook：Vue 组件的单元测试](/v2/cookbook/unit-testing-vue-components.html)
+- [Cookbook：Vue 组件的单元测试](/v2/cookbook/unit-testing-vue-components.html) -->
 
 ## 端到端 (E2E) 测试
 

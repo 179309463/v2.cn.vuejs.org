@@ -18,7 +18,7 @@ Vue 的过渡系统提供了非常多简单的方法设置进入、离开和列�
 通过侦听器我们能监听到任何数值 property 的数值更新。可能听起来很抽象，所以让我们先来看看使用 [GreenSock](https://greensock.com/) 一个例子：
 
 ``` html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<script src="/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
 <div id="animated-number-demo">
   <input v-model.number="number" type="number" step="20">
@@ -47,7 +47,7 @@ new Vue({
 ```
 
 {% raw %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<script src="/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 <div id="animated-number-demo" class="demo">
   <input v-model.number="number" type="number" step="20">
   <p>{{ animatedNumber }}</p>
@@ -76,8 +76,8 @@ new Vue({
 当你把数值更新时，就会触发动画。这个是一个不错的演示，但是对于不能直接像数字一样存储的值，比如 CSS 中的 color 的值，通过下面的例子我们来通过 [Tween.js](https://github.com/tweenjs/tween.js) 和 [Color.js](https://github.com/brehaut/color-js) 实现一个例子：
 
 ``` html
-<script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
-<script src="https://cdn.jsdelivr.net/npm/color-js@1.0.3"></script>
+<script src="/npm/tween.js@16.3.4/index.js"></script>
+<script src="/npm/color-js@1.0.3/index.js"></script>
 
 <div id="example-7">
   <input
@@ -156,8 +156,8 @@ new Vue({
 ```
 
 {% raw %}
-<script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
-<script src="https://cdn.jsdelivr.net/npm/color-js@1.0.3"></script>
+<script src="/npm/tween.js@16.3.4/index.js"></script>
+<script src="/npm/color-js@1.0.3/index.js"></script>
 <div id="example-7" class="demo">
   <input
     v-model="colorQuery"
@@ -236,7 +236,7 @@ new Vue({
 就像 Vue 的过渡组件一样，数据背后状态过渡会实时更新，这对于原型设计十分有用。当你修改一些变量，即使是一个简单的 SVG 多边形也可实现很多难以想象的效果。
 
 {% raw %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenLite.min.js"></script>
+<script src="/ajax/libs/gsap/1.18.5/TweenLite.min.js"></script>
 <div id="svg-polygon-demo" class="demo">
   <svg width="200" height="200" class="demo-svg">
     <polygon :points="points" class="demo-polygon"></polygon>
@@ -366,14 +366,14 @@ function generatePoints (stats) {
 </style>
 {% endraw %}
 
-上述 demo 背后的代码可以通过[这个示例](https://codesandbox.io/s/github/vuejs/v2.vuejs.org/tree/master/src/v2/examples/vue-20-dynamic-state-transitions)进行详阅。
+<!-- 上述 demo 背后的代码可以通过[这个示例](https://codesandbox.io/s/github/vuejs/v2.vuejs.org/tree/master/src/v2/examples/vue-20-dynamic-state-transitions)进行详阅。 -->
 
 ## 把过渡放到组件里
 
 管理太多的状态过渡会很快的增加 Vue 实例或者组件的复杂性，幸好很多的动画可以提取到专用的子组件。我们来将之前的示例改写一下：
 
 ``` html
-<script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+<script src="/npm/tween.js@16.3.4/index.js"></script>
 
 <div id="example-8">
   <input v-model.number="firstNumber" type="number" step="20"> +
@@ -451,7 +451,7 @@ new Vue({
 ```
 
 {% raw %}
-<script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+<script src="/npm/tween.js@16.3.4/index.js"></script>
 <div id="example-8" class="demo">
   <input v-model.number="firstNumber" type="number" step="20"> +
   <input v-model.number="secondNumber" type="number" step="20"> =
@@ -530,4 +530,4 @@ Vue 可以帮到你。因为 SVG 的本质是数据，我们只需要这些动�
 Sarah Drasner 展示了下面这个 demo，这个 demo 结合了时间和交互相关的状态改变：
 
 <p data-height="265" data-theme-id="light" data-slug-hash="YZBGNp" data-default-tab="result" data-user="sdras" data-embed-version="2" data-pen-title="Vue-controlled Wall-E" class="codepen">查看 <a href="https://codepen.io">CodePen</a> 上 Sarah Drasner (<a href="https://codepen.io/sdras">@sdras</a>) 的例子 <a href="https://codepen.io/sdras/pen/YZBGNp/">Vue-controlled Wall-E</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<script async src="/ajax/libs/embed/ei.js"></script>

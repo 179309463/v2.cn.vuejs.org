@@ -6,7 +6,7 @@ order: 401
 
 ## 介绍
 
-<div class="vueschool" style=""><a href="https://learning.dcloud.io/#/?vid=14" target="_blank" rel="sponsored noopener" title="Vue.js教程-单文件组件">观看本节视频讲解</a></div>
+<!-- <div class="vueschool" style=""><a href="https://learning.dcloud.io/#/?vid=14" target="_blank" rel="sponsored noopener" title="Vue.js教程-单文件组件">观看本节视频讲解</a></div> -->
 
 在很多 Vue 项目中，我们使用 `Vue.component` 来定义全局组件，紧接着用 `new Vue({ el: '#container '})` 在每个页面内指定一个容器元素。
 
@@ -20,8 +20,8 @@ order: 401
 文件扩展名为 `.vue` 的 **single-file components (单文件组件)** 为以上所有问题提供了解决方法，并且还可以使用 webpack 或 Browserify 等构建工具。
 
 这是一个文件名为 `Hello.vue` 的简单实例：
-
-<a href="https://codesandbox.io/s/github/vuejs/v2.vuejs.org/tree/master/src/v2/examples/vue-20-single-file-components" target="_blank" rel="noopener noreferrer"><img src="/images/vue-component.png" alt="单文件组件的示例 (点击查看文本版的代码" style="display: block; margin: 30px auto;"></a>
+<img src="/images/vue-component.png" alt="单文件组件的示例" style="display: block; margin: 30px auto;">
+<!-- <a href="https://codesandbox.io/s/github/vuejs/v2.vuejs.org/tree/master/src/v2/examples/vue-20-single-file-components" target="_blank" rel="noopener noreferrer"><img src="/images/vue-component.png" alt="单文件组件的示例 (点击查看文本版的代码）" style="display: block; margin: 30px auto;"></a> -->
 
 现在我们获得：
 

@@ -8,7 +8,7 @@ order: 6
 
 ## 绑定 HTML Class
 
-<div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=7" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - class 与 style 绑定">观看本节视频讲解</a></div>
+<!-- <div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=7" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - class 与 style 绑定">观看本节视频讲解</a></div> -->
 
 ### 对象语法
 

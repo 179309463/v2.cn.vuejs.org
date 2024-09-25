@@ -10,9 +10,9 @@ Vue.js 使用了基于 HTML 的模板语法，允许开发者声明式地将 DOM
 
 如果你熟悉虚拟 DOM 并且偏爱 JavaScript 的原始力量，你也可以不用模板，[直接写渲染 (render) 函数](render-function.html)，使用可选的 JSX 语法。
 
-## 插值
+<!-- ## 插值 -->
 
-<div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=5" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 模板语法 - 插值">观看本节视频讲解</a></div>
+<!-- <div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=5" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 模板语法 - 插值">观看本节视频讲解</a></div> -->
 
 ### 文本
 
@@ -104,7 +104,7 @@ Mustache 语法不能作用在 HTML attribute 上，遇到这种情况应该使�
 
 ## 指令
 
-<div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=6" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 模板语法 - 指令">观看本节视频讲解</a></div>
+<!-- <div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=6" target="_blank" rel="sponsored noopener" title="Vue.js 教程 - 模板语法 - 指令">观看本节视频讲解</a></div> -->
 
 指令 (Directives) 是带有 `v-` 前缀的特殊 attribute。指令 attribute 的值预期是**单个 JavaScript 表达式** (`v-for` 是例外情况，稍后我们再讨论)。指令的职责是，当表达式的值改变时，将其产生的连带影响，响应式地作用于 DOM。回顾我们在介绍中看到的例子：
 

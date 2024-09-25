@@ -44,7 +44,7 @@ const app = new Vue({
 你可以在下面运行这个程序：
 
 <p data-height="265" data-theme-id="0" data-slug-hash="KodaKb" data-default-tab="js,result" data-user="cfjedimaster" data-embed-version="2" data-pen-title="testing localstorage" class="codepen">See the Pen <a href="https://codepen.io/cfjedimaster/pen/KodaKb/">testing localstorage</a> by Raymond Camden (<a href="https://codepen.io/cfjedimaster">@cfjedimaster</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<script async src="/ajax/libs/embed/ei.js"></script>
 
 在表单中输入一些东西，然后刷新页面。你会发现之前输入的值自动出现了。别忘了你的浏览器提供了好用的开发者工具来检查客户端存储的情况。这是一个使用 Firefox 的示例：
 
@@ -104,7 +104,7 @@ const app = new Vue({
 像之前一样，`mounted` 方法是用来加载持久化了的数据 (如果存在的话)。这一次，数据只会在点击按钮后才被持久化。我们也可以在数据被存储之前，对数据进行验证或转换。你也可以将日期一并存储进去来记录这些数据是何时被存储的。有了这些元数据，`mounted` 方法就可以通过逻辑判断来决定是否再次对数据进行存储。你可以在下面对这个版本进行尝试。
 
 <p data-height="265" data-theme-id="0" data-slug-hash="rdOjLN" data-default-tab="js,result" data-user="cfjedimaster" data-embed-version="2" data-pen-title="testing localstorage 2" class="codepen">See the Pen <a href="https://codepen.io/cfjedimaster/pen/rdOjLN/">testing localstorage 2</a> by Raymond Camden (<a href="https://codepen.io/cfjedimaster">@cfjedimaster</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<script async src="/ajax/libs/embed/ei.js"></script>
 
 ## 处理复杂的数据
 
@@ -173,7 +173,7 @@ const app = new Vue({
 我们现在有三种方法可以对猫进行操作。`addCat` 和 `removeCat` 方法负责更新储存在 `this.cats` 中的“实时”Vue 数据。在此之后，它们通过 `saveCats` 方法来序列化和持久化这些数据。你可以在下面体验一下这个版本：
 
 <p data-height="265" data-theme-id="0" data-slug-hash="qoYbyW" data-default-tab="js,result" data-user="cfjedimaster" data-embed-version="2" data-pen-title="localstorage, complex" class="codepen">See the Pen <a href="https://codepen.io/cfjedimaster/pen/qoYbyW/">localstorage, complex</a> by Raymond Camden (<a href="https://codepen.io/cfjedimaster">@cfjedimaster</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<script async src="/ajax/libs/embed/ei.js"></script>
 
 ## 替代方案
 
